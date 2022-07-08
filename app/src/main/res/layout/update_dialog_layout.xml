@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/create_layout"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/product_name_edittext"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="@string/product_name"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/product_desc_edittext"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="@string/product_desc"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/product_regular_price_edittext"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="@string/regular_price"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/product_sale_price_edittext"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="@string/sale_price"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_dialog_text"
+                android:layout_width="wrap_content"
+                android:text="@string/cancel"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:layout_gravity="end"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/save_dialog_text"
+                android:layout_width="wrap_content"
+                android:text="@string/save"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:layout_gravity="end"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
