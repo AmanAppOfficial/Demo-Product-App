@@ -9,6 +9,8 @@ import e.aman.demoproductapp.model.Product
 @Database(entities = [Product::class] , version = 1)
 @TypeConverters(ColorTypeConverter::class)
 abstract class ProductDatabase : RoomDatabase() {
+
+
     abstract fun productDao() :ProductDao
 
     /** get singleton instance of database **/
